@@ -3,6 +3,6 @@ module.exports = {
     'vuetify',
   ],
   publicPath: process.env.NODE_ENV === 'production'
-    ? '/stms_client/'
+    ? '/swimexp_client/'
     : '/',
 };
