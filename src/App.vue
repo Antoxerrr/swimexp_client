@@ -19,7 +19,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 body, html {
   padding: 0;
   margin: 0;

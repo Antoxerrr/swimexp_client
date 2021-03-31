@@ -1,16 +1,23 @@
 <template>
   <div id="wrapper">
     <Header />
-    {{ user }}
+    <v-container
+      class="cont"
+    >
+      <DistCard />
+      <DistCard />
+      <DistCard />
+    </v-container>
   </div>
 </template>
 
 <script>
 import Header from '@/components/Header.vue';
+import DistCard from '@/components/DistCard.vue';
 
 export default {
   name: 'Home',
-  components: { Header },
+  components: { Header, DistCard },
   data: () => ({
     user: null,
   }),
@@ -21,6 +28,9 @@ export default {
 </script>
 
 <style scoped>
+.cont {
+  padding: 0 15px;
+}
 #wrapper {
   margin: 0;
   padding: 0;
